@@ -394,9 +394,8 @@ body { font-size: 19px; }
 .pill { font-size: 16px; } .tag { font-size: 15px; }
 footer { font-size: 16px; }
 @media (max-width: 560px) { body { font-size: 17.5px; } .cell .who { font-size: 11px; } .cell .ctr, .cell .res { font-size: 10.5px; } .race .task q { font-size: 19px; } }
-.overview .ov-frame { border-radius: 14px; overflow: hidden; background: #0c1213; border: 1px solid var(--line); box-shadow: 0 10px 40px rgba(0,0,0,.28); }
-.overview video { display: block; width: 100%; height: auto; }
-.overview .ov-note { margin-top: 12px; color: var(--soft); font-size: 15px; }
+.hero-video { margin-top: 22px; border-radius: 14px; overflow: hidden; background: #0c1213; border: 1px solid var(--line); box-shadow: 0 10px 40px rgba(0,0,0,.28); }
+.hero-video video { display: block; width: 100%; height: auto; }
 </style>
 </head>
 <body>
@@ -404,7 +403,6 @@ footer { font-size: 16px; }
   <div class="wrap">
     <a class="brand" href="#top">Va<b>Lo</b>P</a>
     <ul>
-      <li><a href="#video">Video</a></li>
       <li><a href="#abstract">Abstract</a></li>
       <li><a href="#why">Why</a></li>
       <li><a href="#method">Method</a></li>
@@ -437,6 +435,7 @@ footer { font-size: 16px; }
       <a class="pill" aria-disabled="true" role="link" tabindex="-1">Code <span class="soon">soon</span></a>
       <a class="pill primary" href="#bibtex">BibTeX</a>
     </div>
+    <div class="hero-video"><video src="assets/vid/overview_16x9.mp4" poster="assets/vid/overview_16x9_poster.jpg" controls preload="metadata" playsinline width="1920" height="1080" aria-label="Narrated overview of VaLoP with captions: the problem, the method, and results on image generators and robot policies"></video></div>
     <p class="duo-head">One guidance rule for <span>image generators</span> and <span>robot policies</span></p>
     <div class="duo">
       <figure class="duo-panel">
@@ -466,17 +465,6 @@ footer { font-size: 16px; }
 </header>
 
 <main>
-<section id="video" class="overview">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Video</span>
-      <h2>VaLoP in 72 seconds</h2>
-    </div>
-    <div class="ov-frame"><video src="assets/vid/overview_16x9.mp4" poster="assets/vid/overview_16x9_poster.jpg" controls preload="metadata" playsinline width="1920" height="1080" aria-label="Narrated 72-second overview of VaLoP with captions: the problem, the method, and results on image generators and robot policies"></video></div>
-    <p class="ov-note">With narration and captions.</p>
-  </div>
-</section>
-
 <section id="abstract" class="abstract">
   <div class="wrap abs-wrap">
     <span class="eyebrow">Abstract</span>
